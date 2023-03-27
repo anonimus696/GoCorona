@@ -829,6 +829,9 @@ body.no-scroll {
   .experts__block-text {
     max-width: none;
   }
+  .experts .play-button-wrapper {
+    display: none;
+  }
   .statistics-experts__items {
     max-width: 0 0 50px 0;
   }
