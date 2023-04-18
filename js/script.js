@@ -81,3 +81,20 @@ video.addEventListener("playing", function () {
 video.addEventListener("pause", function () {
     circlePlayButton.style.opacity = 1;
 });
+
+// ========================ScrollToTop================================
+const scrollBtn = document.querySelector('.isShowBtn')
+window.onscroll = () => {
+    if (window.scrollY > 500) {
+        scrollBtn.classList.remove('isShowBtn_hide');
+    } else {
+        scrollBtn.classList.add('isShowBtn_hide');
+        scrollBtn.classList.remove('isShowBtn_rotate');
+    }
+}
+
+scrollBtn.onclick = () => {
+    scrollBtn.classList.add('isShowBtn_rotate');
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+}
+// ========================ScrollToTop================================
