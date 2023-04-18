@@ -458,7 +458,7 @@ body {
   }
 }
 body.no-scroll {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .popup-form__title {
